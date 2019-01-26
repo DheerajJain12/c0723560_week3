@@ -12,4 +12,11 @@ namespace c0723560
         {
         }
     }
+
+    class Node
+    {
+        Node PreviousNode;
+
+        Node NextNode;
+    }
 }
