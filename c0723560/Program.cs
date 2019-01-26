@@ -25,7 +25,7 @@ namespace c0723560
            Maeland.VillageName = "Maeland";
            Maeland.isAstrildeHere = true;
            Schenig = new Village();
-           Schenig.VillageName = "Schenig";
+            Schenig.VillageName = "Schenig";
 
             Alst.NextVillage = Maeland;
             Maeland.NextVillage = Schenig;
