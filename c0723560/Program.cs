@@ -13,10 +13,18 @@ namespace c0723560
         }
     }
 
-    class Node
+    class Countryside
     {
-        Node PreviousNode;
+       
+    }
 
-        Node NextNode;
+    class Village
+    {
+        Village PreviousVillage;
+        Village NextVillage;
+        String VillageName;
+        bool isAstrildeHere = false;
+        public Village() { }
+        
     }
 }
