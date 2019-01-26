@@ -20,18 +20,30 @@ namespace c0723560
 
         public void IntializeMap() {
           Alst = new Village();
+           Alst.VillageName = "Alst";
            Maeland = new Village();
+           Maeland.VillageName = "Maeland";
            Maeland.isAstrildeHere = true;
            Schenig = new Village();
+           Schenig.VillageName = "Schenig";
 
             Alst.NextVillage = Maeland;
             Maeland.NextVillage = Schenig;
             Schenig.NextVillage = Alst;
         }
 
-        public void WalkAround()
+        public void FindAstridle()
         {
-           Village InitialVillage = this.Maeland;
+
+
+           Village CurrentVillage = this.Maeland;
+            if (CurrentVillage.isAstrildeHere)
+            {
+                Console.WriteLine("Hugi found Astridle!!!Celebrations!");
+            }
+            Village NextVillage;
+
+            NextVillage = CurrentVillage.NextVillage;
         }
 
 
